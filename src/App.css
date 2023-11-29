@@ -1,0 +1,295 @@
+#root {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+}
+
+h1 {
+  margin: 1.5rem 0;
+}
+
+.isHoliday {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: .75rem;
+  background-color: #000000a1;
+}
+
+.isHoliday img {
+  width: 2rem;
+}
+
+/* ////////////// WEATHER ////////////////// */
+
+.weather-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 16rem;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.weather-item__footer{
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.today {
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.temperature, .rain, .cloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.temperature p {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.temperature img {
+  width: 6rem;
+}
+
+.rain, .cloud {
+  justify-content: end;
+  border: 1px solid white;
+  border-radius: .5rem;
+  padding: .2rem .5rem;
+}
+
+.rain p, .cloud p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.rain img, .cloud img {
+  width: 2rem;
+}
+
+.cloudy {
+  /*
+  * Created with https://www.css-gradient.com
+  * Gradient link: https://www.css-gradient.com/?c1=777777&c2=b5b5b5&gt=l&gd=dtl
+  */
+  background: #777777;
+  background: linear-gradient(135deg, #777777, #B5B5B5);
+}
+
+.sunny {
+  background: #F2EE8A;
+  background: linear-gradient(135deg, #F2EE8A, #D6BD2F);
+  color: black;
+}
+
+.rainy {
+  background: #1857B5;
+  background: linear-gradient(135deg, #1857B5, #AEBCFC);
+}
+
+/* ///////////////////// FERIADOS ///////////////// */
+
+.holiday {
+  padding: 1rem;
+  color: black;
+}
+
+.año-nuevo {
+  background: #969689;
+  background: linear-gradient(135deg, #969689, #F6CA37);
+}
+
+.carnaval {
+  background: #BA4848;
+  background: linear-gradient(135deg, #BA4848, #0886EE);
+  color: #ffffffde;
+}
+
+.memoria-verdad-justicia,
+ .trabajador,
+.revolucion-mayo,
+.independencia,
+.soberania-nacional,
+.veteranos-malvinas,
+.martin-guemes,
+.belgrano,
+.san-martin {
+  background: #0C9AD3;
+  background: linear-gradient(135deg, #0C9AD3, #FFFFFF);
+}
+
+.diversidad {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+);
+}
+
+.viernes-santo, .inmaculada-maria {
+  background: #F9FF42;
+  background: linear-gradient(135deg, #F9FF42, #FAFAFA);
+}
+
+.puente-turistico {
+  background: #AF4848;
+  background: linear-gradient(135deg, #AF4848, #E6924A);
+  color: #ffffffde;
+}
+
+.navidad {
+  background: #A70E1D;
+  background: linear-gradient(135deg, #A70E1D, #007B47);
+  color: #ffffffde;
+}
+
+/* ///////////// DOLAR ////////////////// */
+
+.dolar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #007047;
+  background: linear-gradient(135deg, #007047, #01DAB9);
+}
+
+.dolar > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.dolar-item {
+  border: 1px solid;
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
+.useful-dates {
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  gap: .5rem;
+  background: #F20726;
+  background: linear-gradient(135deg, #F20726, #F4321E);
+  margin-bottom: 2rem;
+}
+
+/* //////////// SUBTES //////////// */
+
+.subtes {
+  background: #FFF6BF;
+  background: linear-gradient(135deg, #FFF6BF, #F7E59E);
+  color: black;
+}
+
+.subtes a {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem .5rem;
+  font-size: .9rem;
+}
+
+.subtes a:hover {
+  color: black;
+}
+
+.subte {
+  border-radius: .5rem;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+}
+
+.subte-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 6rem;
+}
+
+.A {
+  background-color: #0bb1d9;
+}
+
+.B {
+  background-color: #ef4136;
+}
+
+.C {
+  background-color: #0a6fb5;
+}
+
+.D {
+  background-color: #00816b;
+}
+
+.E {
+  background-color: #7b2d90;
+}
+
+.H {
+  background-color: #ffd001;
+}
+
+.P {
+  background-color: #f5ae38;
+}
+
+.U {
+  background-color: #f57625;
+}
+
+
+/* //////////// FOOTER //////////// */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  text-align: left;
+  padding: 0 1rem;
+  color: orange;
+}
